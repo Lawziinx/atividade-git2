@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resenha do Campo - Início</title>
+
   <style>
+    /* Reset básico */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -13,6 +15,7 @@
       color: #1a1a1a;
     }
 
+    /* Cabeçalho */
     header {
       background-color: #1a3a1a;
       padding: 18px 40px;
@@ -24,9 +27,9 @@
     header h1 {
       color: #f0f0e8;
       font-size: 1.7rem;
-      letter-spacing: 1px;
     }
 
+    /* Menu */
     nav ul {
       list-style: none;
       display: flex;
@@ -36,9 +39,7 @@
     nav ul li a {
       color: #b8d4b8;
       text-decoration: none;
-      font-size: 1rem;
       font-family: Arial, sans-serif;
-      transition: color 0.2s;
     }
 
     nav ul li a:hover,
@@ -47,6 +48,7 @@
       text-decoration: underline;
     }
 
+    /* Destaque principal */
     .hero {
       background-color: #2e6b2e;
       padding: 55px 40px;
@@ -54,21 +56,19 @@
     }
 
     .hero h2 {
-      font-size: 2.2rem;
       color: #f0f0e8;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 1.05rem;
-      max-width: 620px;
-      margin: 0 auto;
       color: #d4ecd4;
-      line-height: 1.75;
+      max-width: 600px;
+      margin: auto;
       font-family: Arial, sans-serif;
     }
 
-    .fotos-destaque {
+    /* Imagens */
+    .fotos {
       display: flex;
       gap: 20px;
       padding: 40px;
@@ -76,81 +76,56 @@
       flex-wrap: wrap;
     }
 
-    .card-img {
+    .card {
+      max-width: 250px;
       text-align: center;
-      max-width: 260px;
     }
 
-    .card-img img {
+    .card img {
       width: 100%;
-      height: 175px;
-      object-fit: cover;
       border-radius: 8px;
-      border: 3px solid #2e6b2e;
     }
 
-    .card-img p {
+    .card p {
       margin-top: 8px;
-      font-size: 0.93rem;
-      color: #444;
       font-family: Arial, sans-serif;
     }
 
-    .texto-principal {
-      padding: 10px 40px 40px;
+    /* Texto principal */
+    .conteudo {
+      padding: 20px 40px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: auto;
     }
 
-    .texto-principal h3 {
-      font-size: 1.45rem;
+    .conteudo h3 {
       color: #1a3a1a;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .texto-principal p {
-      font-size: 1rem;
-      line-height: 1.8;
-      margin-bottom: 14px;
-      color: #333;
+    .conteudo p {
+      margin-bottom: 10px;
+      line-height: 1.6;
     }
 
-    .texto-principal a {
-      color: #2e6b2e;
-      font-weight: bold;
-    }
-
-    .video-section {
-      background-color: #e4ede4;
-      padding: 40px;
-      text-align: center;
-    }
-
-    .video-section h3 {
-      font-size: 1.35rem;
-      color: #1a3a1a;
-      margin-bottom: 20px;
-    }
-
-    .video-section iframe {
-      border: 3px solid #2e6b2e;
-      border-radius: 8px;
-    }
-
+    /* Rodapé */
     footer {
       background-color: #1a3a1a;
       color: #b8d4b8;
       text-align: center;
       padding: 20px;
+      margin-top: 20px;
       font-family: Arial, sans-serif;
-      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- CABEÇALHO -->
   <header>
     <h1>⚽ Resenha do Campo</h1>
+
     <nav>
       <ul>
         <li><a href="index.html" class="ativo">Início</a></li>
@@ -160,67 +135,62 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>O futebol é a paixão do Brasil</h2>
-    <p>
-      Do campinho de terra ao Maracanã, o futebol está no sangue do brasileiro.
-      Aqui você encontra histórias, curiosidades e um pouco da magia do esporte mais
-      popular do país.
-    </p>
-  </section>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
 
-  <section class="fotos-destaque">
-    <div class="card-img">
-      <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=250&fit=crop" alt="Estádio lotado" />
-      <p>Estádios que vibram com a torcida</p>
-    </div>
-    <div class="card-img">
-      <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&h=250&fit=crop" alt="Jogador em campo" />
-      <p>A emoção de um gol inesquecível</p>
-    </div>
-    <div class="card-img">
-      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=250&fit=crop" alt="Torcida colorida" />
-      <p>A torcida, o décimo segundo jogador</p>
-    </div>
-  </section>
+    <!-- Seção destaque -->
+    <section class="hero">
+      <h2>O futebol é a paixão do Brasil</h2>
+      <p>
+        Do campinho de terra ao estádio lotado, o futebol está presente na vida
+        de milhões de brasileiros.
+      </p>
+    </section>
 
-  <section class="texto-principal">
-    <h3>Por que o futebol move o Brasil?</h3>
-    <p>
-      Não existe outro esporte no Brasil que una tanto as pessoas quanto o futebol.
-      Em dia de jogo, o país para. Ruas ficam vazias, bares enchem, e a discussão
-      sobre escalação começa dias antes da partida.
-    </p>
-    <p>
-      O futebol brasileiro tem uma história rica, com gerações de craques que marcaram
-      época dentro e fora do país. Pelé, Garrincha, Ronaldo, Ronaldinho — nomes que
-      transcendem o esporte e viraram símbolos culturais.
-    </p>
-    <p>
-      Quer saber mais sobre os principais times e a história do futebol nacional?
-      Acesse a página de <a href="times.html">Times & História</a>.
-      Você também pode visitar o site da
-      <a href="https://www.cbf.com.br" target="_blank">CBF</a> ou do
-      <a href="https://ge.globo.com" target="_blank">ge.globo</a> para acompanhar
-      as últimas notícias.
-    </p>
-  </section>
+    <!-- Imagens -->
+    <section class="fotos">
 
-  <section class="video-section">
-    <h3>Reviva momentos históricos do futebol brasileiro</h3>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/As8G7XOIPSM"
-      title="Momentos históricos do futebol brasileiro"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </section>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400" alt="Estádio">
+        <p>Estádios lotados</p>
+      </div>
 
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400" alt="Jogador">
+        <p>Momentos de jogo</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400" alt="Torcida">
+        <p>Torcida apaixonada</p>
+      </div>
+
+    </section>
+
+    <!-- Texto -->
+    <section class="conteudo">
+      <h3>Por que o futebol é tão importante?</h3>
+
+      <p>
+        O futebol é mais do que um esporte no Brasil — é cultura, paixão e identidade.
+      </p>
+
+      <p>
+        Grandes jogadores como Pelé e Ronaldo marcaram gerações e ajudaram a construir
+        a história do país no esporte.
+      </p>
+
+      <p>
+        Quer saber mais? Visite a página de 
+        <a href="times.html">Times & História</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
   <footer>
-    <p>Resenha do Campo &copy; 2025 — Feito por um fã do futebol brasileiro.</p>
+    <p>Site desenvolvido para atividade escolar - 2025</p>
   </footer>
 
 </body>
