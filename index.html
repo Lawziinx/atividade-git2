@@ -1,192 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resenha do Campo - Início</title>
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background-color: #f4f4f0;
-      color: #1a1a1a;
-    }
-
-    header {
-      background-color: #1a3a1a;
-      padding: 18px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    header h1 {
-      color: #f0f0e8;
-      font-size: 1.7rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      color: #b8d4b8;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.ativo {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    .hero {
-      background-color: #2e6b2e;
-      padding: 55px 40px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      color: #f0f0e8;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: #d4ecd4;
-      max-width: 600px;
-      margin: auto;
-      font-family: Arial, sans-serif;
-    }
-
-    .fotos {
-      display: flex;
-      gap: 20px;
-      padding: 40px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      max-width: 250px;
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .card p {
-      margin-top: 8px;
-      font-family: Arial, sans-serif;
-    }
-
-    .conteudo {
-      padding: 20px 40px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .conteudo h3 {
-      color: #1a3a1a;
-      margin-bottom: 10px;
-    }
-
-    .conteudo p {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    footer {
-      background-color: #1a3a1a;
-      color: #b8d4b8;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Futebol Brasileiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- CABEÇALHO -->
-  <header>
-    <h1>⚽ Resenha do Campo</h1>
-
+<header>
+    <h1>Futebol Brasileiro</h1>
     <nav>
-      <ul>
-        <li><a href="index.html" class="ativo">Início</a></li>
-        <li><a href="times.html">Times & História</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="times.html">Times</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
 
-    <!-- Destaque -->
-    <section class="hero">
-      <h2>O futebol é a paixão do Brasil</h2>
-      <p>
-        Do campinho de terra ao estádio lotado, o futebol está presente na vida
-        de milhões de brasileiros.
-      </p>
+    <section class="banner">
+        <h2>Bem-vindo ao mundo do futebol!</h2>
+        <p>Fique por dentro das novidades, times e curiosidades do futebol brasileiro.</p>
     </section>
 
-    <!-- IMAGENS DE DESTAQUE -->
-    <section class="fotos">
+    <section class="destaques">
+        <h2>Destaques</h2>
 
-      <!-- Imagem 1 -->
-      <div class="card">
-        <img src="https://s2-ge.glbimg.com/aj7AYbbJ3XpVyG13aivUnKcUdFs=/2048x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/6/B/QZQXrmQKCLPDghPq7wHg/gt3qncexaaaeet-.jpg" alt="Imagem 1 - Estádio lotado">
-        <p><strong>Imagem 1:</strong> Estádio cheio durante partida</p>
-      </div>
+        <div class="card">
+            <img src="https://media.torcedores.com/wp-content/uploads/2024/04/mosaico-da-torcida-do-flamengo-foto-marcelo-cortes-flamengo.jpg" alt="Torcida do Flamengo">
+            <h3>Paixão da Torcida</h3>
+            <p>A torcida do Flamengo é conhecida por sua enorme presença e apoio incondicional ao time em qualquer situação.</p>
+        </div>
 
-      <!-- Imagem 2 -->
-      <div class="card">
-        <img src="https://images.bolavip.com/webp/br/full/BBR_20251124_BBR_1637714_AGIF25112320565635_3ce3d210.webp" alt="Imagem 2 - Jogador em campo">
-        <p><strong>Imagem 2:</strong> Jogador em ação durante o jogo</p>
-      </div>
+        <div class="card">
+            <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2025-09/54780950571_bd96069347_o.jpg" alt="Kaio Jorge em campo">
+            <h3>Novos Talentos</h3>
+            <p>Kaio Jorge é um exemplo da nova geração de jogadores brasileiros que vêm ganhando espaço e mostrando seu potencial.</p>
+        </div>
 
-      <!-- Imagem 3 -->
-      <div class="card">
-        <img src="https://mengaodomeucoracao.com.br/wp-content/uploads/2025/08/Estadio-lotado-Torcida-do-Flamengo-esgota-ingressos-para-o-confronto.jpg" alt="Imagem 3 - Torcida">
-        <p><strong>Imagem 3:</strong> Torcida do Flamengo lotando o estádio</p>
-      </div>
+        <div class="card">
+            <img src="https://palmeirasonline.com/wp-content/uploads/2022/11/Jogadores-da-SE-Palmeiras-comemorando-o-gol-na-partida-contra-o-Fortaleza-pela-Serie-A-do-Campeonato-Brasileiro-no-Allianz-Parque.jpg" alt="Jogadores do Palmeiras comemorando">
+            <h3>Grandes Conquistas</h3>
+            <p>O Palmeiras tem se destacado nos últimos anos com títulos importantes e um elenco muito competitivo.</p>
+        </div>
 
     </section>
 
-    <!-- Texto -->
-    <section class="conteudo">
-      <h3>Por que o futebol é tão importante?</h3>
+</main>
 
-      <p>
-        O futebol é mais do que um esporte no Brasil — é cultura, paixão e identidade.
-      </p>
-
-      <p>
-        Grandes jogadores como Pelé e Ronaldo marcaram gerações e ajudaram a construir
-        a história do país no esporte.
-      </p>
-
-      <p>
-        Quer saber mais? Visite a página de 
-        <a href="times.html">Times & História</a>.
-      </p>
-    </section>
-
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>Site desenvolvido para atividade escolar - 2025</p>
-  </footer>
+<footer>
+    <p>© 2026 - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>
