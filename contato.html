@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resenha do Campo - Contato</title>
+
   <style>
+    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -13,20 +15,20 @@
       color: #1a1a1a;
     }
 
+    /* Cabeçalho */
     header {
       background-color: #1a3a1a;
       padding: 18px 40px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     header h1 {
       color: #f0f0e8;
-      font-size: 1.7rem;
-      letter-spacing: 1px;
     }
 
+    /* Menu */
     nav ul {
       list-style: none;
       display: flex;
@@ -36,9 +38,7 @@
     nav ul li a {
       color: #b8d4b8;
       text-decoration: none;
-      font-size: 1rem;
       font-family: Arial, sans-serif;
-      transition: color 0.2s;
     }
 
     nav ul li a:hover,
@@ -47,146 +47,115 @@
       text-decoration: underline;
     }
 
-    .titulo-pagina {
-      padding: 40px 40px 20px;
+    /* Título */
+    .titulo {
       text-align: center;
+      padding: 40px 20px 10px;
     }
 
-    .titulo-pagina h2 {
-      font-size: 2rem;
+    .titulo h2 {
       color: #1a3a1a;
-      margin-bottom: 8px;
     }
 
-    .titulo-pagina p {
-      font-size: 1rem;
+    .titulo p {
       color: #555;
       font-family: Arial, sans-serif;
     }
 
-    .conteudo-contato {
+    /* Layout */
+    .container {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      padding: 30px 40px 50px;
+      padding: 30px 40px;
       justify-content: center;
     }
 
+    /* Formulário */
     .formulario {
       background-color: #fff;
       border: 2px solid #b8d4b8;
       border-radius: 10px;
-      padding: 30px;
-      max-width: 460px;
+      padding: 25px;
+      max-width: 450px;
       width: 100%;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.06);
     }
 
     .formulario h3 {
-      font-size: 1.2rem;
+      margin-bottom: 15px;
       color: #1a3a1a;
-      margin-bottom: 20px;
     }
 
     .campo {
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
     .campo label {
       display: block;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #333;
       margin-bottom: 5px;
+      font-family: Arial, sans-serif;
     }
 
     .campo input,
     .campo textarea,
     .campo select {
       width: 100%;
-      padding: 10px;
-      border: 1px solid #aaa;
+      padding: 8px;
       border-radius: 5px;
-      font-size: 0.95rem;
-      font-family: Arial, sans-serif;
-      background-color: #fafaf6;
-      color: #1a1a1a;
+      border: 1px solid #aaa;
     }
 
     .campo textarea {
-      resize: vertical;
-      min-height: 100px;
+      min-height: 90px;
     }
 
-    .btn-enviar {
+    .btn {
       background-color: #2e6b2e;
       color: #fff;
       border: none;
-      padding: 11px 28px;
+      padding: 10px 20px;
       border-radius: 5px;
-      font-size: 1rem;
       cursor: pointer;
-      font-family: Arial, sans-serif;
-      transition: background-color 0.2s;
     }
 
-    .btn-enviar:hover {
+    .btn:hover {
       background-color: #1a3a1a;
     }
 
-    .info-lateral {
-      max-width: 320px;
-      width: 100%;
+    /* Info lateral */
+    .info {
+      max-width: 300px;
     }
 
-    .info-lateral h3 {
-      font-size: 1.2rem;
+    .info h3 {
+      margin-bottom: 10px;
       color: #1a3a1a;
-      margin-bottom: 14px;
     }
 
-    .info-lateral p {
+    .info p {
       font-family: Arial, sans-serif;
-      font-size: 0.95rem;
-      line-height: 1.7;
+      margin-bottom: 10px;
       color: #444;
-      margin-bottom: 18px;
     }
 
-    .info-lateral a {
-      color: #2e6b2e;
-      font-weight: bold;
-    }
-
-    .galeria-lateral {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 10px;
-    }
-
-    .galeria-lateral img {
-      width: 100%;
-      border-radius: 7px;
-      border: 2px solid #b8d4b8;
-      object-fit: cover;
-      height: 150px;
-    }
-
+    /* Rodapé */
     footer {
       background-color: #1a3a1a;
       color: #b8d4b8;
       text-align: center;
       padding: 20px;
+      margin-top: 20px;
       font-family: Arial, sans-serif;
-      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- CABEÇALHO -->
   <header>
     <h1>⚽ Resenha do Campo</h1>
+
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -196,75 +165,71 @@
     </nav>
   </header>
 
-  <section class="titulo-pagina">
-    <h2>Fala Comigo</h2>
-    <p>Tem alguma opinião, sugestão de time ou quer debater futebol? É só mandar mensagem.</p>
-  </section>
+  <main>
 
-  <div class="conteudo-contato">
+    <!-- Título -->
+    <section class="titulo">
+      <h2>Contato</h2>
+      <p>Envie sua mensagem sobre futebol</p>
+    </section>
 
-    <div class="formulario">
-      <h3>Manda a sua mensagem</h3>
+    <!-- Conteúdo -->
+    <section class="container">
 
-      <div class="campo">
-        <label for="nome">Seu nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Ex: Carlos Oliveira" />
+      <!-- Formulário -->
+      <div class="formulario">
+        <h3>Fale comigo</h3>
+
+        <div class="campo">
+          <label>Nome</label>
+          <input type="text" placeholder="Seu nome">
+        </div>
+
+        <div class="campo">
+          <label>Email</label>
+          <input type="email" placeholder="Seu email">
+        </div>
+
+        <div class="campo">
+          <label>Seu time</label>
+          <select>
+            <option>Selecione</option>
+            <option>Flamengo</option>
+            <option>Corinthians</option>
+            <option>Palmeiras</option>
+            <option>Atlético Mineiro</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>Mensagem</label>
+          <textarea placeholder="Digite sua mensagem"></textarea>
+        </div>
+
+        <button class="btn">Enviar</button>
       </div>
 
-      <div class="campo">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
+      <!-- Info -->
+      <div class="info">
+        <h3>Sobre o site</h3>
+
+        <p>
+          Este site foi criado como um projeto escolar sobre futebol brasileiro.
+        </p>
+
+        <p>
+          Aqui você encontra informações sobre clubes, história e curiosidades do esporte.
+        </p>
       </div>
 
-      <div class="campo">
-        <label for="time">Qual é o seu time?</label>
-        <select id="time" name="time">
-          <option value="">— Selecione —</option>
-          <option value="flamengo">Flamengo</option>
-          <option value="corinthians">Corinthians</option>
-          <option value="palmeiras">Palmeiras</option>
-          <option value="sao-paulo">São Paulo</option>
-          <option value="atletico-mg">Atlético Mineiro</option>
-          <option value="cruzeiro">Cruzeiro</option>
-          <option value="gremio">Grêmio</option>
-          <option value="internacional">Internacional</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div>
+    </section>
 
-      <div class="campo">
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Escreve aí..."></textarea>
-      </div>
+  </main>
 
-      <button class="btn-enviar" type="button">Enviar</button>
-    </div>
-
-    <div class="info-lateral">
-      <h3>Sobre o site</h3>
-      <p>
-        O <strong>Resenha do Campo</strong> é um projeto pessoal feito por quem
-        cresceu assistindo futebol e quer compartilhar um pouco dessa paixão.
-        Nenhum clube patrocina este site — é só amor pelo esporte mesmo.
-      </p>
-      <p>
-        Para acompanhar as notícias do futebol brasileiro, recomendo:
-        <br />
-        <a href="https://ge.globo.com" target="_blank">ge.globo</a> &nbsp;|&nbsp;
-        <a href="https://www.cbf.com.br" target="_blank">CBF oficial</a> &nbsp;|&nbsp;
-        <a href="https://www.uol.com.br/esporte/" target="_blank">UOL Esporte</a>
-      </p>
-
-      <div class="galeria-lateral">
-        <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=400&h=200&fit=crop" alt="Bola de futebol no gramado" />
-        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=200&fit=crop" alt="Campo de futebol visto de cima" />
-      </div>
-    </div>
-
-  </div>
-
+  <!-- Rodapé -->
   <footer>
-    <p>Resenha do Campo &copy; 2025 — Feito por um fã do futebol brasileiro.</p>
+    <p>Site desenvolvido para atividade escolar - 2025</p>
   </footer>
 
 </body>
