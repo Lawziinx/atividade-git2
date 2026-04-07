@@ -1,30 +1,227 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resenha do Campo - Início</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f4f4f0;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #1a3a1a;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      color: #f0f0e8;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #b8d4b8;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.ativo {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #2e6b2e;
+      padding: 55px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: #f0f0e8;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto;
+      color: #d4ecd4;
+      line-height: 1.75;
+      font-family: Arial, sans-serif;
+    }
+
+    .fotos-destaque {
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card-img {
+      text-align: center;
+      max-width: 260px;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #2e6b2e;
+    }
+
+    .card-img p {
+      margin-top: 8px;
+      font-size: 0.93rem;
+      color: #444;
+      font-family: Arial, sans-serif;
+    }
+
+    .texto-principal {
+      padding: 10px 40px 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .texto-principal h3 {
+      font-size: 1.45rem;
+      color: #1a3a1a;
+      margin-bottom: 12px;
+    }
+
+    .texto-principal p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 14px;
+      color: #333;
+    }
+
+    .texto-principal a {
+      color: #2e6b2e;
+      font-weight: bold;
+    }
+
+    .video-section {
+      background-color: #e4ede4;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .video-section h3 {
+      font-size: 1.35rem;
+      color: #1a3a1a;
+      margin-bottom: 20px;
+    }
+
+    .video-section iframe {
+      border: 3px solid #2e6b2e;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #1a3a1a;
+      color: #b8d4b8;
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Meu site</h1>
+  <header>
+    <h1>⚽ Resenha do Campo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="times.html">Times & História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <p>Esse site foi feito como atividade usando HTML.</p>
+  <section class="hero">
+    <h2>O futebol é a paixão do Brasil</h2>
+    <p>
+      Do campinho de terra ao Maracanã, o futebol está no sangue do brasileiro.
+      Aqui você encontra histórias, curiosidades e um pouco da magia do esporte mais
+      popular do país.
+    </p>
+  </section>
 
-    <h2>Sobre mim</h2>
-    <p>Meu nome é Iarley e estou aprendendo desenvolvimento web.</p>
+  <section class="fotos-destaque">
+    <div class="card-img">
+      <img src="images/estadio.jpg" alt="Estádio lotado" />
+      <p>Estádios que vibram com a torcida</p>
+    </div>
+    <div class="card-img">
+      <img src="images/gol.jpg" alt="Jogador comemorando gol" />
+      <p>A emoção de um gol inesquecível</p>
+    </div>
+    <div class="card-img">
+      <img src="images/torcida.jpg" alt="Torcida colorida" />
+      <p>A torcida, o décimo segundo jogador</p>
+    </div>
+  </section>
 
-    <h2>Experiência</h2>
-    <p>Já fiz outras atividades parecidas antes, então já tenho uma noção básica de HTML.</p>
+  <section class="texto-principal">
+    <h3>Por que o futebol move o Brasil?</h3>
+    <p>
+      Não existe outro esporte no Brasil que una tanto as pessoas quanto o futebol.
+      Em dia de jogo, o país para. Ruas ficam vazias, bares enchem, e a discussão
+      sobre escalação começa dias antes da partida.
+    </p>
+    <p>
+      O futebol brasileiro tem uma história rica, com gerações de craques que marcaram
+      época dentro e fora do país. Pelé, Garrincha, Ronaldo, Ronaldinho — nomes que
+      transcendem o esporte e viraram símbolos culturais.
+    </p>
+    <p>
+      Quer saber mais sobre os principais times e a história do futebol nacional?
+      Acesse a página de <a href="times.html">Times & História</a>.
+      Você também pode visitar o site da
+      <a href="https://www.cbf.com.br" target="_blank">CBF</a> ou do
+      <a href="https://ge.globo.com" target="_blank">ge.globo</a> para acompanhar
+      as últimas notícias.
+    </p>
+  </section>
 
-    <h2>O que eu sei</h2>
-    <ul>
-        <li>HTML: Básico</li>
-        <li>CSS: Básico</li>
-        <li>JavaScript: Básico</li>
-    </ul>
+  <section class="video-section">
+    <h3>Reviva momentos históricos do futebol brasileiro</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/As8G7XOIPSM"
+      title="Momentos históricos do futebol brasileiro"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
 
-    <h2>Objetivo do site</h2>
-    <p>O objetivo deste site é praticar a criação de páginas web e o uso do GitHub.</p>
+  <footer>
+    <p>Resenha do Campo &copy; 2025 — Feito por um fã do futebol brasileiro.</p>
+  </footer>
 
 </body>
 </html>
