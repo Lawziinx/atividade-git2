@@ -203,24 +203,27 @@
     <!-- Conteúdo -->
     <section class="container">
 
-      <!-- Formulário -->
-      <div class="formulario">
+      <!-- Formulário FUNCIONANDO -->
+      <form class="formulario" action="https://formsubmit.co/Iarleyjesus7@gmail.com" method="POST">
         <h3>Fale comigo</h3>
+
+        <input type="hidden" name="_subject" value="Nova mensagem do site Resenha do Campo!">
+        <input type="hidden" name="_captcha" value="false">
 
         <div class="campo">
           <label>Nome</label>
-          <input type="text" placeholder="Seu nome">
+          <input type="text" name="nome" placeholder="Seu nome" required>
         </div>
 
         <div class="campo">
           <label>Email</label>
-          <input type="email" placeholder="Seu email">
+          <input type="email" name="email" placeholder="Seu email" required>
         </div>
 
         <div class="campo">
           <label>Seu time</label>
-          <select>
-            <option>Selecione</option>
+          <select name="time" required>
+            <option value="">Selecione</option>
             <option>Flamengo</option>
             <option>Corinthians</option>
             <option>Palmeiras</option>
@@ -233,11 +236,11 @@
 
         <div class="campo">
           <label>Mensagem</label>
-          <textarea placeholder="Digite sua mensagem"></textarea>
+          <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
         </div>
 
-        <button class="btn">Enviar</button>
-      </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
 
       <!-- Info -->
       <div class="info">
