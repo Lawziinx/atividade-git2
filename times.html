@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resenha do Campo - Times & História</title>
+
   <style>
+    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -13,20 +15,20 @@
       color: #1a1a1a;
     }
 
+    /* Cabeçalho */
     header {
       background-color: #1a3a1a;
       padding: 18px 40px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     header h1 {
       color: #f0f0e8;
-      font-size: 1.7rem;
-      letter-spacing: 1px;
     }
 
+    /* Menu */
     nav ul {
       list-style: none;
       display: flex;
@@ -36,9 +38,7 @@
     nav ul li a {
       color: #b8d4b8;
       text-decoration: none;
-      font-size: 1rem;
       font-family: Arial, sans-serif;
-      transition: color 0.2s;
     }
 
     nav ul li a:hover,
@@ -47,104 +47,96 @@
       text-decoration: underline;
     }
 
-    .titulo-pagina {
-      padding: 40px 40px 10px;
+    /* Título da página */
+    .titulo {
       text-align: center;
+      padding: 40px 20px 10px;
     }
 
-    .titulo-pagina h2 {
-      font-size: 2rem;
+    .titulo h2 {
       color: #1a3a1a;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
-    .titulo-pagina p {
-      font-size: 1rem;
+    .titulo p {
       color: #555;
       font-family: Arial, sans-serif;
     }
 
-    .times-grid {
+    /* Grid de times */
+    .grid-times {
       display: flex;
       flex-wrap: wrap;
-      gap: 28px;
+      gap: 25px;
       padding: 40px;
       justify-content: center;
     }
 
-    .time-card {
+    .card-time {
       background-color: #fff;
       border: 2px solid #b8d4b8;
       border-radius: 10px;
-      max-width: 300px;
+      max-width: 280px;
       overflow: hidden;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.07);
     }
 
-    .time-card img {
+    .card-time img {
       width: 100%;
-      height: 175px;
+      height: 170px;
       object-fit: cover;
     }
 
-    .time-info {
-      padding: 16px;
+    .info {
+      padding: 15px;
     }
 
-    .time-info h3 {
-      font-size: 1.15rem;
+    .info h3 {
       color: #1a3a1a;
       margin-bottom: 8px;
     }
 
-    .time-info p {
-      font-size: 0.92rem;
-      line-height: 1.6;
+    .info p {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
       color: #444;
-      font-family: Arial, sans-serif;
     }
 
-    .secao-historia {
+    /* História */
+    .historia {
       background-color: #e4ede4;
-      padding: 40px;
-      margin: 0 40px 40px;
+      padding: 30px;
+      margin: 20px 40px;
       border-left: 5px solid #2e6b2e;
-      border-radius: 4px;
     }
 
-    .secao-historia h3 {
-      font-size: 1.35rem;
+    .historia h3 {
+      margin-bottom: 10px;
       color: #1a3a1a;
-      margin-bottom: 14px;
     }
 
-    .secao-historia p {
-      font-size: 0.97rem;
-      line-height: 1.75;
+    .historia p {
+      margin-bottom: 10px;
       font-family: Arial, sans-serif;
-      color: #333;
-      margin-bottom: 12px;
+      line-height: 1.6;
     }
 
-    .secao-historia em {
-      font-style: italic;
-      color: #2e6b2e;
-    }
-
+    /* Rodapé */
     footer {
       background-color: #1a3a1a;
       color: #b8d4b8;
       text-align: center;
       padding: 20px;
       font-family: Arial, sans-serif;
-      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- CABEÇALHO -->
   <header>
     <h1>⚽ Resenha do Campo</h1>
+
     <nav>
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -154,110 +146,74 @@
     </nav>
   </header>
 
-  <section class="titulo-pagina">
-    <h2>Times & História</h2>
-    <p>Conheça alguns dos maiores clubes do futebol brasileiro e um pouco da história do esporte no país.</p>
-  </section>
+  <main>
 
-  <section class="times-grid">
+    <!-- Título -->
+    <section class="titulo">
+      <h2>Times & História</h2>
+      <p>Alguns dos maiores clubes do Brasil</p>
+    </section>
 
-    <div class="time-card">
-      <!-- Maracanã - estádio do Flamengo -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/cinquenta/Rio_de_Janeiro_Maracan%C3%A3_Stadium_4.jpg/640px-Rio_de_Janeiro_Maracan%C3%A3_Stadium_4.jpg"
-           onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400&h=250&fit=crop'"
-           alt="Maracanã - estádio do Flamengo" />
-      <div class="time-info">
-        <h3>Flamengo — RJ</h3>
-        <p>
-          O clube com mais torcedores do Brasil. Fundado em 1895, manda seus jogos
-          no Maracanã e tem títulos brasileiros, estaduais e uma Libertadores
-          inesquecível em 2019.
-        </p>
+    <!-- Times -->
+    <section class="grid-times">
+
+      <div class="card-time">
+        <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7f0b?w=400" alt="Flamengo">
+        <div class="info">
+          <h3>Flamengo</h3>
+          <p>Um dos maiores clubes do Brasil, com enorme torcida e grandes títulos.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="time-card">
-      <!-- Neo Química Arena - estádio do Corinthians -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Arena_Corinthians_-_Itaquera.jpg/640px-Arena_Corinthians_-_Itaquera.jpg"
-           onerror="this.src='https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400&h=250&fit=crop'"
-           alt="Neo Química Arena - estádio do Corinthians" />
-      <div class="time-info">
-        <h3>Corinthians — SP</h3>
-        <p>
-          O "Time do Povo", fundado em 1910 por operários. Manda seus jogos na
-          Neo Química Arena, em Itaquera. Campeão do Mundial de Clubes em 2012.
-        </p>
+      <div class="card-time">
+        <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=400" alt="Corinthians">
+        <div class="info">
+          <h3>Corinthians</h3>
+          <p>Conhecido como o time do povo, com uma torcida extremamente fiel.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="time-card">
-      <!-- Allianz Parque - estádio do Palmeiras -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Allianz_Parque_-_Palmeiras.jpg/640px-Allianz_Parque_-_Palmeiras.jpg"
-           onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=250&fit=crop'"
-           alt="Allianz Parque - estádio do Palmeiras" />
-      <div class="time-info">
-        <h3>Palmeiras — SP</h3>
-        <p>
-          Um dos clubes mais vencedores do país, com sede no Allianz Parque.
-          Bicampeão da Libertadores em 2020 e 2021, com times de alto nível.
-        </p>
+      <div class="card-time">
+        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400" alt="Palmeiras">
+        <div class="info">
+          <h3>Palmeiras</h3>
+          <p>Clube muito vencedor, destaque recente em competições internacionais.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="time-card">
-      <!-- Mineirão - estádio do Atlético-MG -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Est%C3%A1dio_Mineiro_%28Mineir%C3%A3o%29.jpg/640px-Est%C3%A1dio_Mineiro_%28Mineir%C3%A3o%29.jpg"
-           onerror="this.src='https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=400&h=250&fit=crop'"
-           alt="Mineirão - estádio do Atlético Mineiro" />
-      <div class="time-info">
-        <h3>Atlético Mineiro — MG</h3>
-        <p>
-          Maior clube de Minas Gerais, manda seus jogos no Mineirão. Conquistou
-          a Libertadores em 2013 em noites épicas com o estádio completamente lotado.
-        </p>
+      <div class="card-time">
+        <img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=400" alt="Atlético Mineiro">
+        <div class="info">
+          <h3>Atlético Mineiro</h3>
+          <p>Grande clube de Minas Gerais, conhecido por sua torcida apaixonada.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="time-card">
-      <!-- Arena do Grêmio -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Arena_do_Gr%C3%AAmio.jpg/640px-Arena_do_Gr%C3%AAmio.jpg"
-           onerror="this.src='https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&h=250&fit=crop'"
-           alt="Arena do Grêmio" />
-      <div class="time-info">
-        <h3>Grêmio — RS</h3>
-        <p>
-          Um dos maiores clubes do Sul do Brasil, com casa na Arena do Grêmio,
-          em Porto Alegre. Bicampeão da Libertadores e dono de uma torcida
-          extremamente fiel e apaixonada.
-        </p>
-      </div>
-    </div>
+    </section>
 
-  </section>
+    <!-- História -->
+    <section class="historia">
+      <h3>História do Futebol no Brasil</h3>
 
-  <div class="secao-historia">
-    <h3>O futebol no Brasil: uma história de mais de 130 anos</h3>
-    <p>
-      O futebol chegou ao Brasil no final do século XIX, trazido por Charles Miller,
-      filho de pai inglês nascido em São Paulo. Em 1894, ele voltou da Inglaterra com
-      duas bolas e um livro de regras, e o esporte foi ganhando espaço rapidamente.
-    </p>
-    <p>
-      Nos anos seguintes, o futebol se espalhou pelo país e deixou de ser
-      exclusividade das elites. Com a chegada de jogadores negros e mestiços ao
-      esporte — como o lendário <em>Leônidas da Silva</em> nos anos 30 —
-      o futebol ganhou o estilo único que conhecemos hoje: criativo, raçudo e cheio de arte.
-    </p>
-    <p>
-      A Copa do Mundo de 1950, realizada no Brasil, deixou uma marca profunda com
-      o "Maracanazo". Mas a geração de Pelé e Garrincha mais do que compensou,
-      conquistando três títulos mundiais em 1958, 1962 e 1970. Desde então, o Brasil
-      acumulou mais dois títulos, em 1994 e 2002.
-    </p>
-  </div>
+      <p>
+        O futebol chegou ao Brasil no final do século XIX, trazido por Charles Miller.
+      </p>
 
+      <p>
+        Com o tempo, o esporte se popularizou e se tornou o mais importante do país.
+      </p>
+
+      <p>
+        O Brasil conquistou cinco Copas do Mundo e revelou grandes jogadores
+        reconhecidos mundialmente.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
   <footer>
-    <p>Resenha do Campo &copy; 2025 — Feito por um fã do futebol brasileiro.</p>
+    <p>Site desenvolvido para atividade escolar - 2025</p>
   </footer>
 
 </body>
