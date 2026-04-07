@@ -8,7 +8,7 @@ Projeto desenvolvido para a atividade 04 da disciplina de HTML. O site foi criad
 
 ## Páginas
 
-- `index.html` — Página inicial com apresentação e vídeo do YouTube
+- `index.html` — Página inicial com apresentação e toda parte da introdução
 - `times.html` — Informações sobre times e história do futebol brasileiro
 - `contato.html` — Formulário de contato com links externos
 
