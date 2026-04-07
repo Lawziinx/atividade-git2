@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resenha do Campo - Times & História</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f4f4f0;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #1a3a1a;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      color: #f0f0e8;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #b8d4b8;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.ativo {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .titulo-pagina {
+      padding: 40px 40px 10px;
+      text-align: center;
+    }
+
+    .titulo-pagina h2 {
+      font-size: 2rem;
+      color: #1a3a1a;
+      margin-bottom: 8px;
+    }
+
+    .titulo-pagina p {
+      font-size: 1rem;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+
+    .times-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      padding: 40px;
+      justify-content: center;
+    }
+
+    .time-card {
+      background-color: #fff;
+      border: 2px solid #b8d4b8;
+      border-radius: 10px;
+      max-width: 300px;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.07);
+    }
+
+    .time-card img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+    }
+
+    .time-info {
+      padding: 16px;
+    }
+
+    .time-info h3 {
+      font-size: 1.15rem;
+      color: #1a3a1a;
+      margin-bottom: 8px;
+    }
+
+    .time-info p {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #444;
+      font-family: Arial, sans-serif;
+    }
+
+    .secao-historia {
+      background-color: #e4ede4;
+      padding: 40px;
+      margin: 0 40px 40px;
+      border-left: 5px solid #2e6b2e;
+      border-radius: 4px;
+    }
+
+    .secao-historia h3 {
+      font-size: 1.35rem;
+      color: #1a3a1a;
+      margin-bottom: 14px;
+    }
+
+    .secao-historia p {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .secao-historia em {
+      font-style: italic;
+      color: #2e6b2e;
+    }
+
+    footer {
+      background-color: #1a3a1a;
+      color: #b8d4b8;
+      text-align: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚽ Resenha do Campo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="times.html" class="ativo">Times & História</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="titulo-pagina">
+    <h2>Times & História</h2>
+    <p>Conheça alguns dos maiores clubes do futebol brasileiro e um pouco da história do esporte no país.</p>
+  </section>
+
+  <section class="times-grid">
+
+    <div class="time-card">
+      <img src="images/flamengo.jpg" alt="Flamengo" />
+      <div class="time-info">
+        <h3>Flamengo — RJ</h3>
+        <p>
+          O clube com mais torcedores do Brasil. Fundado em 1895, tem história marcante
+          no futebol nacional e internacional, com títulos brasileiros, estaduais e
+          uma Libertadores inesquecível em 2019.
+        </p>
+      </div>
+    </div>
+
+    <div class="time-card">
+      <img src="images/corinthians.jpg" alt="Corinthians" />
+      <div class="time-info">
+        <h3>Corinthians — SP</h3>
+        <p>
+          O "Time do Povo", fundado em 1910 por operários. Famoso pela Democracia
+          Corinthiana nos anos 80 e pelo título do Mundial de Clubes em 2012.
+          Uma das maiores torcidas do Brasil.
+        </p>
+      </div>
+    </div>
+
+    <div class="time-card">
+      <img src="images/palmeiras.jpg" alt="Palmeiras" />
+      <div class="time-info">
+        <h3>Palmeiras — SP</h3>
+        <p>
+          Um dos clubes mais vencedores do país. Com fortes raízes na comunidade
+          italiana em São Paulo, é dono de vários títulos brasileiros e bicampeão
+          da Libertadores em 2020 e 2021.
+        </p>
+      </div>
+    </div>
+
+    <div class="time-card">
+      <img src="images/atletico.jpg" alt="Atlético Mineiro" />
+      <div class="time-info">
+        <h3>Atlético Mineiro — MG</h3>
+        <p>
+          Clube fundado em 1908, é o maior de Minas Gerais. Conquistou a Libertadores
+          em 2013 de forma épica, em noites inesquecíveis no Mineirão lotado.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="secao-historia">
+    <h3>O futebol no Brasil: uma história de mais de 130 anos</h3>
+    <p>
+      O futebol chegou ao Brasil no final do século XIX, trazido por Charles Miller,
+      filho de pai inglês nascido em São Paulo. Em 1894, ele voltou da Inglaterra com
+      duas bolas e um livro de regras, e o esporte foi ganhando espaço rapidamente.
+    </p>
+    <p>
+      Nos anos seguintes, o futebol se espalhou pelo país e deixou de ser
+      exclusividade das elites. Com a chegada de jogadores negros e mestiços ao
+      esporte — como o lendário <em>Leônidas da Silva</em> nos anos 30 —
+      o futebol ganhou o estilo único que conhecemos hoje: criativo, raçudo e cheio de arte.
+    </p>
+    <p>
+      A Copa do Mundo de 1950, realizada no Brasil, deixou uma marca profunda com
+      o "Maracanazo". Mas a geração de Pelé e Garrincha mais do que compensou,
+      conquistando três títulos mundiais em 1958, 1962 e 1970. Desde então, o Brasil
+      acumulou mais dois títulos, em 1994 e 2002.
+    </p>
+  </div>
+
+  <footer>
+    <p>Resenha do Campo &copy; 2025 — Feito por um fã do futebol brasileiro.</p>
+  </footer>
+
+</body>
+</html>
