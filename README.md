@@ -19,4 +19,4 @@ Projeto desenvolvido para a atividade 04 da disciplina de HTML. O site foi criad
 
 ## Deploy
 
-Acesse o site publicado em: https://lawziinx.github.io/atividade-git2/
+Acesse o site publicado em: https://lawziinx.github.io/resenha-do-campo/
